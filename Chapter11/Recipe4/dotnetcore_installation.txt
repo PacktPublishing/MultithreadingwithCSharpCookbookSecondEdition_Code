@@ -1,0 +1,16 @@
+#please do it on your own risk! 
+sudo sysctl -w kern.maxfiles=20480
+
+sudo sysctl -w kern.maxfilesperproc=18000
+
+sudo ulimit -S -n 2048
+
+mkdir HelloWorld
+
+cd HelloWorld
+
+dotnet new
+
+dotnet restore
+
+dotnet run
